@@ -17,7 +17,7 @@ const Otp = ({navigation}) => {
     <NativeBaseProvider>
       <Box safeArea flex={1} p="2" py="8" w="90%" mx="auto">
         <Heading size="lg" fontWeight="600" color="coolGray.800">
-          2FA Verification
+          2FA Verification 
         </Heading>
         <Heading mt="1" color="coolGray.600" fontWeight="medium" size="xs">
           Input Otp!
