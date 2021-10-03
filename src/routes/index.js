@@ -11,6 +11,7 @@ import Chat from '../screens/Chat';
 import Profile from '../screens/Profile';
 import Login from '../screens/Login';
 import Complaint from '../screens/Complaint';
+import otp from '../screens/Login/otp';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -74,7 +75,7 @@ const MainApp = () => {
 };
 const Routes = () => {
   return (
-    <Stack.Navigator initialRouteName="MainApp">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
         name="MainApp"
         component={MainApp}
@@ -88,6 +89,11 @@ const Routes = () => {
       <Stack.Screen
         name="Login"
         component={Login}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Otp"
+        component={otp}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
