@@ -75,7 +75,7 @@ const MainApp = () => {
 };
 const Routes = () => {
   return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="Splash">
       <Stack.Screen
         name="MainApp"
         component={MainApp}
