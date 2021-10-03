@@ -1,6 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-
+import { StyleSheet, View } from 'react-native'
+import { Stack,Text, HStack,TouchableOpacity,Center } from 'native-base'
+import MaterialComIcon from 'react-native-vector-icons/MaterialCommunityIcons'
 const Bill = () => {
     return (
         <Stack space={3} py="2" alignItems="center">
