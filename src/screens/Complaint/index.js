@@ -38,10 +38,28 @@ const Complaint = () => {
               CSO
             </Center>
           </TouchableOpacity>
+        </Stack>
+      </VStack>
+      <VStack space="2.5" mt="4">
+        <Stack direction="row" mb="2.5" mt="1.5" ml="2" space={3}>
           <TouchableOpacity>
             <Center
               size="120"
-              bg="emerald.500"
+              bg="amber.500"
+              rounded="sm"
+              _text={{
+                color: 'warmGray.50',
+                fontWeight: 'medium',
+                textAlign:'center'
+              }}
+              shadow={'3'}>
+              Mechanical Enginering
+            </Center>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Center
+              bg="success.500"
+              size="120"
               rounded="sm"
               _text={{
                 color: 'warmGray.50',
@@ -63,7 +81,7 @@ const Complaint = () => {
             _text={{
               color: 'warmGray.50',
               fontWeight: 'bold',
-              fontSize:20
+              fontSize: 20,
             }}
             shadow={'3'}>
             Panic!!!
