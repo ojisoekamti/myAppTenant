@@ -12,6 +12,9 @@ import Profile from '../screens/Profile';
 import Login from '../screens/Login';
 import Complaint from '../screens/Complaint';
 import otp from '../screens/Login/otp';
+import BillInfo from '../screens/BillInfo';
+import BulanBilll from '../screens/BillInfo/BulanBilll';
+import TahunBill from '../screens/BillInfo/TahunBill';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -41,7 +44,11 @@ const MainApp = () => {
           headerShown: false,
           tabBarIcon: ({size, focused, color}) => {
             return (
-              <Icon size="sm" as={<MaterialIcon name="message" />} color={color} />
+              <Icon
+                size="sm"
+                as={<MaterialIcon name="message" />}
+                color={color}
+              />
             );
           },
         }}
@@ -53,7 +60,11 @@ const MainApp = () => {
           headerShown: false,
           tabBarIcon: ({size, focused, color}) => {
             return (
-              <Icon size="sm" as={<MaterialIcon name="assignment" />} color={color} />
+              <Icon
+                size="sm"
+                as={<MaterialIcon name="assignment" />}
+                color={color}
+              />
             );
           },
         }}
@@ -65,7 +76,11 @@ const MainApp = () => {
           headerShown: false,
           tabBarIcon: ({size, focused, color}) => {
             return (
-              <Icon size="sm" as={<MaterialIcon name="account-circle" />} color={color} />
+              <Icon
+                size="sm"
+                as={<MaterialIcon name="account-circle" />}
+                color={color}
+              />
             );
           },
         }}
@@ -91,9 +106,20 @@ const Routes = () => {
         component={Login}
         options={{headerShown: false}}
       />
+      <Stack.Screen name="Otp" component={otp} options={{headerShown: false}} />
       <Stack.Screen
-        name="Otp"
-        component={otp}
+        name="BillInfo"
+        component={BillInfo}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="BulanBill"
+        component={BulanBilll}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="TahunBill"
+        component={TahunBill}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

@@ -27,21 +27,21 @@ export function Example({navigation}) {
           activeDotColor="#d97706">
           <View style={styles.slide}>
             <Image
-              source={require('../../assets/images/food-banner1.jpg')}
+              source={require('../../assets/images/city-resort.jpeg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
           </View>
           <View style={styles.slide}>
             <Image
-              source={require('../../assets/images/food-banner2.jpg')}
+              source={require('../../assets/images/city-resort.jpeg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
           </View>
           <View style={styles.slide}>
             <Image
-              source={require('../../assets/images/food-banner3.jpg')}
+              source={require('../../assets/images/city-sky.jpeg')}
               resizeMode="cover"
               style={styles.sliderImage}
             />
@@ -52,17 +52,13 @@ export function Example({navigation}) {
       <View style={styles.categoryContainer}>
         <TouchableOpacity
           style={styles.categoryBtn}
-          onPress={() =>{}
-          }>
+          onPress={() => navigation.navigate('BillInfo')}>
           <View style={styles.categoryIcon}>
             <Ionicons name="cash" size={35} color="#d97706" />
           </View>
           <Text style={styles.categoryBtnTxt}>Bill Information</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.categoryBtn}
-          onPress={() =>{}
-          }>
+        <TouchableOpacity style={styles.categoryBtn} onPress={() => {}}>
           <View style={styles.categoryIcon}>
             <MaterialCommunityIcons
               name="account-alert"
@@ -93,45 +89,48 @@ export function Example({navigation}) {
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../../assets/images/food-banner2.jpg')}
+              source={require('../../assets/images/city-resort.jpeg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Lorem Ipsum</Text>
+            <Text style={styles.cardTitle}>Complaint di Terima</Text>
             <Text style={styles.cardDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Complaint SCR-111420217, Telah Di Terima, akan segera diproses
+              dalam waktu singkat. Harap perhatikan notifikasi selanjutnya.
             </Text>
           </View>
         </View>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../../assets/images/food-banner3.jpg')}
+              source={require('../../assets/images/city-resort-poll.jpeg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Lorem Ipsum</Text>
+            <Text style={styles.cardTitle}>Sosialisasi Covid-19</Text>
             <Text style={styles.cardDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Sosialisasi Covid-19, yang akan diadakan di Town hall , pada
+              tanggal 19-Desember-2021
             </Text>
           </View>
         </View>
         <View style={styles.card}>
           <View style={styles.cardImgWrapper}>
             <Image
-              source={require('../../assets/images/food-banner4.jpg')}
+              source={require('../../assets/images/city-sky.jpeg')}
               resizeMode="cover"
               style={styles.cardImg}
             />
           </View>
           <View style={styles.cardInfo}>
-            <Text style={styles.cardTitle}>Lorem Ipsum</Text>
+            <Text style={styles.cardTitle}>Pemilihan Ketua RT</Text>
             <Text style={styles.cardDetails}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Kami harapkan seluruh undangan dapat hadir pada waktu yang telah
+              ditetapkan oleh panitia.
             </Text>
           </View>
         </View>
@@ -140,11 +139,11 @@ export function Example({navigation}) {
   );
 }
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <NativeBaseProvider>
       <AppBar />
-      <Example />
+      <Example navigation={navigation} />
     </NativeBaseProvider>
   );
 };

@@ -17,7 +17,7 @@ const Profile = () => {
         <View style={{flexDirection: 'row', marginTop: 15}}>
           <Avatar.Image
             source={{
-              uri: "https://gravatar.com/avatar/fabe71b5c857bc6a5c63ecaaa695c08d",
+              uri: "https://sb.thecityresort.com/storage/users/default.png",
             }}
             size={80}
           />
@@ -30,9 +30,9 @@ const Profile = () => {
                   marginBottom: 5,
                 },
               ]}>
-              John Doe
+              Raymond Lesmana
             </Title>
-            <Caption style={styles.caption}>@j_doe</Caption>
+            {/* <Caption style={styles.caption}>@raymond_</Caption> */}
           </View>
         </View>
       </View>
@@ -40,21 +40,21 @@ const Profile = () => {
       <View style={styles.userInfoSection}>
         <View style={styles.row}>
           <Icon name="map-marker-radius" color="#777777" size={20} />
-          <Text style={{color: '#777777', marginLeft: 20}}>Kolkata, India</Text>
+          <Text style={{color: '#777777', marginLeft: 20}}>Jakarta, Indonesia</Text>
         </View>
         <View style={styles.row}>
           <Icon name="phone" color="#777777" size={20} />
-          <Text style={{color: '#777777', marginLeft: 20}}>+91-900000009</Text>
+          <Text style={{color: '#777777', marginLeft: 20}}>+62-8111112221</Text>
         </View>
         <View style={styles.row}>
           <Icon name="email" color="#777777" size={20} />
           <Text style={{color: '#777777', marginLeft: 20}}>
-            john_doe@email.com
+            raymond.lesmana@gmail.com
           </Text>
         </View>
       </View>
 
-      <View style={styles.infoBoxWrapper}>
+      {/* <View style={styles.infoBoxWrapper}>
         <View
           style={[
             styles.infoBox,
@@ -70,7 +70,7 @@ const Profile = () => {
           <Title>12</Title>
           <Caption>Orders</Caption>
         </View>
-      </View>
+      </View> */}
 
       <View style={styles.menuWrapper}>
         <TouchableRipple onPress={() => {}}>
